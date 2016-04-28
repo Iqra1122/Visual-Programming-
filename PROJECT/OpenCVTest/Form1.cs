@@ -11,7 +11,13 @@ using System.Windows.Forms;
 using Emgu.CV;
 using Emgu.CV.UI;
 using Emgu.CV.Structure;
-
+using Emgu.CV.CvEnum;
+using Emgu.CV.Features2D;
+using Emgu.CV.Util;
+#if !__IOS__
+using Emgu.CV.Cuda;
+#endif
+using Emgu.CV.XFeatures2D;
 
 namespace OpenCVTest
 {
@@ -30,7 +36,7 @@ namespace OpenCVTest
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+           
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -41,11 +47,11 @@ namespace OpenCVTest
 
                     FileDialog fldlg = new OpenFileDialog();
 
-                    //specify your own initial directory
+                    //Specify your own initial directory
 
                     fldlg.InitialDirectory = @":D\";
 
-                    //this will allow only those file extensions to be added
+                  //This will allow only these file extensions to be added
 
                     fldlg.Filter = "Image File (*.jpg;*.bmp;*.gif;*.png)|*.jpg;*.bmp;*.gif;*.png";
 
@@ -57,7 +63,7 @@ namespace OpenCVTest
                         Bitmap newimg = new Bitmap(imagename);
 
                         imageName.SizeMode = PictureBoxSizeMode.StretchImage;
-
+                        
                         imageName.Image = (Image)newimg;
 
                     }
@@ -102,9 +108,9 @@ namespace OpenCVTest
 
                         Bitmap newimg = new Bitmap(imagename);
 
-                        imageName1.SizeMode = PictureBoxSizeMode.StretchImage;
+                        ImageName1.SizeMode = PictureBoxSizeMode.StretchImage;
 
-                        imageName1.Image = (Image)newimg;
+                        ImageName1.Image = (Image)newimg;
 
                     }
 
@@ -116,7 +122,6 @@ namespace OpenCVTest
                 {
 
                     imagename = " ";
-
                     MessageBox.Show(ae.Message.ToString());
 
                 }
@@ -124,5 +129,16 @@ namespace OpenCVTest
 
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Application.Exit(); 
+        }
+       
     }
 }

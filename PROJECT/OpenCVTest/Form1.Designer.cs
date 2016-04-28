@@ -30,7 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.imageName = new System.Windows.Forms.PictureBox();
-            this.imageName1 = new System.Windows.Forms.PictureBox();
+            this.ImageName1 = new System.Windows.Forms.PictureBox();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.label2 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
@@ -38,8 +38,11 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.openFileDialog2 = new System.Windows.Forms.OpenFileDialog();
+            this.button5 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.imageName)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imageName1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImageName1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -62,13 +65,13 @@
             this.imageName.TabIndex = 2;
             this.imageName.TabStop = false;
             // 
-            // imageName1
+            // ImageName1
             // 
-            this.imageName1.Location = new System.Drawing.Point(17, 21);
-            this.imageName1.Name = "imageName1";
-            this.imageName1.Size = new System.Drawing.Size(383, 207);
-            this.imageName1.TabIndex = 3;
-            this.imageName1.TabStop = false;
+            this.ImageName1.Location = new System.Drawing.Point(17, 21);
+            this.ImageName1.Name = "ImageName1";
+            this.ImageName1.Size = new System.Drawing.Size(383, 207);
+            this.ImageName1.TabIndex = 3;
+            this.ImageName1.TabStop = false;
             // 
             // progressBar1
             // 
@@ -95,13 +98,14 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(197, 45);
             this.button3.TabIndex = 16;
-            this.button3.Text = "Start identifying";
+            this.button3.Text = "Start SURF Detection";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.imageName1);
+            this.panel2.Controls.Add(this.ImageName1);
             this.panel2.Location = new System.Drawing.Point(245, 311);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(425, 250);
@@ -142,11 +146,32 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // openFileDialog2
+            // 
+            this.openFileDialog2.FileName = "openFileDialog1";
+            // 
+            // button5
+            // 
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button5.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Location = new System.Drawing.Point(676, 603);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(112, 45);
+            this.button5.TabIndex = 20;
+            this.button5.Text = "Exit";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1052, 707);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.label2);
@@ -159,7 +184,7 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.imageName)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imageName1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImageName1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -171,7 +196,7 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox imageName;
-        private System.Windows.Forms.PictureBox imageName1;
+        private System.Windows.Forms.PictureBox ImageName1;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button3;
@@ -179,6 +204,9 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog2;
+        private System.Windows.Forms.Button button5;
 
     }
 }
