@@ -1,0 +1,6 @@
+c:\users\nasir\documents\visual studio 2013\Projects\3212016\3212016\bin\Debug\3212016.exe.config
+c:\users\nasir\documents\visual studio 2013\Projects\3212016\3212016\bin\Debug\3212016.exe
+c:\users\nasir\documents\visual studio 2013\Projects\3212016\3212016\bin\Debug\3212016.pdb
+c:\users\nasir\documents\visual studio 2013\Projects\3212016\3212016\obj\Debug\3212016.csprojResolveAssemblyReference.cache
+c:\users\nasir\documents\visual studio 2013\Projects\3212016\3212016\obj\Debug\3212016.exe
+c:\users\nasir\documents\visual studio 2013\Projects\3212016\3212016\obj\Debug\3212016.pdb

@@ -1,0 +1,6 @@
+c:\users\nasir\documents\visual studio 2013\Projects\Copyto()\Copyto()\bin\Debug\Copyto().exe.config
+c:\users\nasir\documents\visual studio 2013\Projects\Copyto()\Copyto()\bin\Debug\Copyto().exe
+c:\users\nasir\documents\visual studio 2013\Projects\Copyto()\Copyto()\bin\Debug\Copyto().pdb
+c:\users\nasir\documents\visual studio 2013\Projects\Copyto()\Copyto()\obj\Debug\Copyto().csprojResolveAssemblyReference.cache
+c:\users\nasir\documents\visual studio 2013\Projects\Copyto()\Copyto()\obj\Debug\Copyto().exe
+c:\users\nasir\documents\visual studio 2013\Projects\Copyto()\Copyto()\obj\Debug\Copyto().pdb
