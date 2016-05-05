@@ -1,0 +1,6 @@
+c:\users\nasir\documents\visual studio 2013\Projects\Trim _function\Trim _function\bin\Debug\Trim _function.exe.config
+c:\users\nasir\documents\visual studio 2013\Projects\Trim _function\Trim _function\bin\Debug\Trim _function.exe
+c:\users\nasir\documents\visual studio 2013\Projects\Trim _function\Trim _function\bin\Debug\Trim _function.pdb
+c:\users\nasir\documents\visual studio 2013\Projects\Trim _function\Trim _function\obj\Debug\Trim _function.csprojResolveAssemblyReference.cache
+c:\users\nasir\documents\visual studio 2013\Projects\Trim _function\Trim _function\obj\Debug\Trim _function.exe
+c:\users\nasir\documents\visual studio 2013\Projects\Trim _function\Trim _function\obj\Debug\Trim _function.pdb
