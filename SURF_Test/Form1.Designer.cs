@@ -51,18 +51,18 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(548, 12);
+            this.button1.Location = new System.Drawing.Point(518, 81);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(118, 71);
+            this.button1.Size = new System.Drawing.Size(134, 36);
             this.button1.TabIndex = 0;
-            this.button1.Text = "Perform Surf";
+            this.button1.Text = "Perform Surf Detection";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // imageBox1
             // 
             this.imageBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.imageBox1.Location = new System.Drawing.Point(312, 102);
+            this.imageBox1.Location = new System.Drawing.Point(312, 172);
             this.imageBox1.Name = "imageBox1";
             this.imageBox1.Size = new System.Drawing.Size(906, 476);
             this.imageBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -71,21 +71,21 @@
             // 
             // tbSrcImage
             // 
-            this.tbSrcImage.Location = new System.Drawing.Point(105, 28);
+            this.tbSrcImage.Location = new System.Drawing.Point(413, 9);
             this.tbSrcImage.Name = "tbSrcImage";
             this.tbSrcImage.Size = new System.Drawing.Size(377, 20);
             this.tbSrcImage.TabIndex = 3;
             // 
             // tbFndImage
             // 
-            this.tbFndImage.Location = new System.Drawing.Point(105, 55);
+            this.tbFndImage.Location = new System.Drawing.Point(413, 43);
             this.tbFndImage.Name = "tbFndImage";
             this.tbFndImage.Size = new System.Drawing.Size(377, 20);
             this.tbFndImage.TabIndex = 4;
             // 
             // btnSrcImage
             // 
-            this.btnSrcImage.Location = new System.Drawing.Point(488, 26);
+            this.btnSrcImage.Location = new System.Drawing.Point(836, 4);
             this.btnSrcImage.Name = "btnSrcImage";
             this.btnSrcImage.Size = new System.Drawing.Size(27, 23);
             this.btnSrcImage.TabIndex = 5;
@@ -95,7 +95,7 @@
             // 
             // btnFndImage
             // 
-            this.btnFndImage.Location = new System.Drawing.Point(488, 53);
+            this.btnFndImage.Location = new System.Drawing.Point(836, 40);
             this.btnFndImage.Name = "btnFndImage";
             this.btnFndImage.Size = new System.Drawing.Size(27, 23);
             this.btnFndImage.TabIndex = 6;
@@ -114,25 +114,27 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(17, 31);
+            this.label1.Location = new System.Drawing.Point(309, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(68, 13);
             this.label1.TabIndex = 7;
             this.label1.Text = "Model Image";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(17, 58);
+            this.label2.Location = new System.Drawing.Point(308, 49);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(83, 13);
             this.label2.TabIndex = 8;
             this.label2.Text = "Image To Track";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // pbSource
             // 
             this.pbSource.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pbSource.Location = new System.Drawing.Point(20, 102);
+            this.pbSource.Location = new System.Drawing.Point(12, 25);
             this.pbSource.Name = "pbSource";
             this.pbSource.Size = new System.Drawing.Size(263, 217);
             this.pbSource.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -142,7 +144,7 @@
             // pbFnd
             // 
             this.pbFnd.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pbFnd.Location = new System.Drawing.Point(20, 338);
+            this.pbFnd.Location = new System.Drawing.Point(12, 273);
             this.pbFnd.Name = "pbFnd";
             this.pbFnd.Size = new System.Drawing.Size(263, 230);
             this.pbFnd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -152,7 +154,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(17, 86);
+            this.label3.Location = new System.Drawing.Point(12, 9);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(73, 13);
             this.label3.TabIndex = 11;
@@ -161,7 +163,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(17, 322);
+            this.label4.Location = new System.Drawing.Point(9, 256);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(72, 13);
             this.label4.TabIndex = 12;
@@ -170,7 +172,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(309, 86);
+            this.label5.Location = new System.Drawing.Point(309, 136);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(69, 13);
             this.label5.TabIndex = 13;
@@ -195,7 +197,7 @@
             this.Controls.Add(this.imageBox1);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
-            this.Text = "Channel Logo Finder";
+            this.Text = "my_project";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.imageBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSource)).EndInit();

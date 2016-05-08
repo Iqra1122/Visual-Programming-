@@ -79,6 +79,27 @@ namespace SURF_Test
             Image imgFnd = Image.FromFile(tbFndImage.Text.ToString());
             pbFnd.Image = imgFnd;
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 
     public class PerformSURF : Form
@@ -152,6 +173,7 @@ namespace SURF_Test
                     watch = Stopwatch.StartNew();
                     // extract features from the observed image
                     UMat observedDescriptors = new UMat();
+              
                     surfCPU.DetectAndCompute(uObservedImage, null, observedKeyPoints, observedDescriptors, false);
                     BFMatcher matcher = new BFMatcher(DistanceType.L2);
                     matcher.Add(modelDescriptors);

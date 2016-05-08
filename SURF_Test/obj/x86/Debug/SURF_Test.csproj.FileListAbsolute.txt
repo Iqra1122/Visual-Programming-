@@ -17,3 +17,4 @@ C:\Users\Iqra Tariq\Documents\Visual Studio 2015\Projects\SURF_Test\SURF_Test\bi
 C:\Users\Iqra Tariq\Documents\Visual Studio 2015\Projects\SURF_Test\SURF_Test\obj\x86\Debug\SURF_Test.Properties.Resources.resources
 C:\Users\Iqra Tariq\Documents\Visual Studio 2015\Projects\SURF_Test\SURF_Test\obj\x86\Debug\SURF_Test.exe
 C:\Users\Iqra Tariq\Documents\Visual Studio 2015\Projects\SURF_Test\SURF_Test\obj\x86\Debug\SURF_Test.pdb
+C:\Users\Iqra Tariq\Documents\Visual Studio 2015\Projects\SURF_Test\SURF_Test\obj\x86\Debug\SURF_Test.csprojResolveAssemblyReference.cache
