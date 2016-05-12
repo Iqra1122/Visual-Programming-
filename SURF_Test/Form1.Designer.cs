@@ -87,9 +87,9 @@
             // 
             this.btnSrcImage.Location = new System.Drawing.Point(836, 4);
             this.btnSrcImage.Name = "btnSrcImage";
-            this.btnSrcImage.Size = new System.Drawing.Size(27, 23);
+            this.btnSrcImage.Size = new System.Drawing.Size(62, 23);
             this.btnSrcImage.TabIndex = 5;
-            this.btnSrcImage.Text = "...";
+            this.btnSrcImage.Text = "Browse";
             this.btnSrcImage.UseVisualStyleBackColor = true;
             this.btnSrcImage.Click += new System.EventHandler(this.btnSrcImage_Click);
             // 
@@ -97,9 +97,9 @@
             // 
             this.btnFndImage.Location = new System.Drawing.Point(836, 40);
             this.btnFndImage.Name = "btnFndImage";
-            this.btnFndImage.Size = new System.Drawing.Size(27, 23);
+            this.btnFndImage.Size = new System.Drawing.Size(62, 23);
             this.btnFndImage.TabIndex = 6;
-            this.btnFndImage.Text = "...";
+            this.btnFndImage.Text = "Browse";
             this.btnFndImage.UseVisualStyleBackColor = true;
             this.btnFndImage.Click += new System.EventHandler(this.btnFndImage_Click);
             // 
@@ -119,7 +119,7 @@
             this.label1.Size = new System.Drawing.Size(68, 13);
             this.label1.TabIndex = 7;
             this.label1.Text = "Model Image";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+//            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -129,7 +129,7 @@
             this.label2.Size = new System.Drawing.Size(83, 13);
             this.label2.TabIndex = 8;
             this.label2.Text = "Image To Track";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+   //         this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // pbSource
             // 

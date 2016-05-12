@@ -32,28 +32,28 @@ namespace SURF_Test
         private void button1_Click(object sender, EventArgs e)
         {
 
-            Image<Bgr, byte> src = new Image<Bgr, byte>(tbFndImage.Text.ToString());
-            Image<Bgr, byte> fnd = new Image<Bgr, byte>(tbSrcImage.Text.ToString());
-            Mat srcImg = new Mat();
-            srcImg = src.Mat;
-            Mat fndImg = new Mat();
-            fndImg = fnd.Mat;
-            long a = 1000;
+            try
+            {
+                Image<Bgr, byte> src = new Image<Bgr, byte>(tbFndImage.Text.ToString());
+                Image<Bgr, byte> fnd = new Image<Bgr, byte>(tbSrcImage.Text.ToString());
+                Mat srcImg = new Mat();
+                srcImg = src.Mat;
+                Mat fndImg = new Mat();
+                fndImg = fnd.Mat;
+                long a = 1000;
 
-            imageBox1.Image = surf.Draw(srcImg, fndImg, out a);
+                imageBox1.Image = surf.Draw(srcImg, fndImg, out a);
+            }
+            catch (Exception ee)
+            {
+
+                MessageBox.Show(ee.Message);
+            }
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            //Image<Bgr, byte> src = new Image<Bgr, byte>(SURF_Test.Properties.Resources.src);
-            //Image<Bgr, byte> fnd = new Image<Bgr, byte>(SURF_Test.Properties.Resources.fnd);
-
-            //Mat srcImg = new Mat();
-            //srcImg = src.Mat;
-            //Mat fndImg = new Mat();
-            //fndImg = src.Mat;
-            //long a = 10000;
-            //Draw(srcImg, fndImg, out a);
+            
 
         }
 
@@ -64,42 +64,40 @@ namespace SURF_Test
 
         private void btnSrcImage_Click(object sender, EventArgs e)
         {
-            ofdSrcImage.ShowDialog();
-            tbSrcImage.Text = ofdSrcImage.FileName.ToString();
-            Image imgSrc = Image.FromFile(tbSrcImage.Text.ToString());
-            pbSource.Image = imgSrc ;
+            try
+            {
+
+                ofdSrcImage.ShowDialog();
+                tbSrcImage.Text = ofdSrcImage.FileName.ToString();
+                Image imgSrc = Image.FromFile(tbSrcImage.Text.ToString());
+                pbSource.Image = imgSrc;
+            }
+            catch (Exception ee)
+            {
+
+                MessageBox.Show(ee.Message);
+            }
 
            
         }
 
         private void btnFndImage_Click(object sender, EventArgs e)
         {
-            ofdFndImage.ShowDialog();
-            tbFndImage.Text = ofdFndImage.FileName.ToString();
-            Image imgFnd = Image.FromFile(tbFndImage.Text.ToString());
-            pbFnd.Image = imgFnd;
+            try
+            {
+                ofdFndImage.ShowDialog();
+                tbFndImage.Text = ofdFndImage.FileName.ToString();
+                Image imgFnd = Image.FromFile(tbFndImage.Text.ToString());
+                pbFnd.Image = imgFnd;
+            }
+            catch (Exception ee)
+            {
+
+                MessageBox.Show(ee.Message);
+            }
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-            this.Close();
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void button2_Click_1(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 
     public class PerformSURF : Form
@@ -242,19 +240,11 @@ namespace SURF_Test
                     {
                         CvInvoke.Polylines(result, vp, true, new MCvScalar(255, 0, 0, 255), 5);
                     }
-
                 }
-
                 #endregion
-
                 return result;
 
             }
         }
     }
-
-
-
-   
-    
 }
